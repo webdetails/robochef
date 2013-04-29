@@ -13,7 +13,8 @@ import org.pentaho.di.core.Result;
 import org.pentaho.di.core.exception.KettleException;
 import org.pentaho.di.core.exception.KettleXMLException;
 
-//TO DO: This will break in Kettle 5.0. Needs to be changed to KettleLogStore
+//TO DO: This will break in Kettle 5.0. Needs to be changed to KettleLogStore, check
+// http://jira.pentaho.com/browse/PDI-8028
 import org.pentaho.di.core.logging.CentralLogStore;
 
 
