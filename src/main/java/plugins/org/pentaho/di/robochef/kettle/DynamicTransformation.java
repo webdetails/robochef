@@ -12,7 +12,11 @@ import org.pentaho.di.core.KettleEnvironment;
 import org.pentaho.di.core.Result;
 import org.pentaho.di.core.exception.KettleException;
 import org.pentaho.di.core.exception.KettleXMLException;
+
+//TO DO: This will break in Kettle 5.0. Needs to be changed to KettleLogStore
 import org.pentaho.di.core.logging.CentralLogStore;
+
+
 import org.pentaho.di.core.logging.LoggingRegistry;
 import org.pentaho.di.core.variables.VariableSpace;
 import org.pentaho.di.core.variables.Variables;
