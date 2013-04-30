@@ -9,7 +9,7 @@
 	<properties>
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
-		<kettle.version>4.3.0-stable</kettle.version>
+		<kettle.version>4.3.0-stable</kettle.version> 
 	</properties>
 
 	<repositories>
@@ -82,6 +82,12 @@
 			<artifactId>kettle-db</artifactId>
 			<version>${kettle.version}</version>
 		</dependency>
+        <dependency>
+            <groupId>pentaho-kettle</groupId>
+            <artifactId>kettle5-log4j-plugin</artifactId>
+            <version>TRUNK-SNAPSHOT</version>
+        </dependency>
+		
 	</dependencies>
 	<reporting>
 		<plugins>
