@@ -16,6 +16,7 @@ import org.pentaho.di.core.exception.KettleXMLException;
 import org.pentaho.di.core.logging.CentralLogStore;
 
 
+import org.pentaho.di.core.logging.LogLevel;
 import org.pentaho.di.core.logging.LoggingRegistry;
 import org.pentaho.di.core.variables.VariableSpace;
 import org.pentaho.di.core.variables.Variables;
@@ -142,6 +143,7 @@ public class DynamicTransformation {
 		}
 
 		trans = new Trans(transMeta);
+    trans.setLogLevel(LogLevel.NOTHING);
 		state = State.CREATED;
 	}
 
@@ -212,6 +214,7 @@ public class DynamicTransformation {
 
   
   	private void cleanLogs(String logChannelId) {
+                  CentralLogStore.init();
 		CentralLogStore.discardLines(logChannelId, true);
 		// Remove the entries from the registry
     
